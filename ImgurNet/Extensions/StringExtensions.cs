@@ -3,7 +3,7 @@ using Flurl.Http;
 
 namespace ImgurNet.Extensions
 {
-    public  static class StringExtensions
+    internal  static class StringExtensions
     {
         public static FlurlClient WithImgurAuthHeader(this Url url, string clientId)
         {

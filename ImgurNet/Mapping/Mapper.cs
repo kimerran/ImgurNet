@@ -3,7 +3,7 @@ using ImgurNet.Models;
 
 namespace ImgurNet.Mapping
 {
-    public class Mapper
+    internal class Mapper
     {
         public static T Map<T>(dynamic resultData) where T : class
         {
@@ -13,6 +13,8 @@ namespace ImgurNet.Mapping
             {
                 switch (typeParam.Name)
                 {
+                    case "Basic":
+                        return (T)Convert.ChangeType(MapBasic(resultData), typeParam);
                     case "Account":
                         return (T)Convert.ChangeType(MapAccount(resultData), typeParam);
                     case "Image":
@@ -28,6 +30,15 @@ namespace ImgurNet.Mapping
             }
         }
 
+        private static Basic MapBasic(dynamic data)
+        {
+            return new Basic
+            {
+                Data = data.data,
+                Status = data.status,
+                Success = data.success
+            };
+        }
 
         /// <summary>
         /// Tries to convert result data to Image object

@@ -28,15 +28,14 @@ namespace ImgurNet
         /// <returns></returns>
         public async Task<Image> ImageDetails(string id)
         {
-            var url = ImgurUrls.ImageDetailsUrl(id);
+            var url = ImgurUrls.ImageIdUrl(id);
 
             try
             {
-                var result = await url
-                    .WithImgurAuthHeader(_clientId)
+                var result = await url.WithImgurAuthHeader(_clientId)
                     .GetJsonAsync();
 
-                var basic = Basic.CreateFromDynamic(result);
+                var basic = Mapper.Map<Basic>(result);
                 return Mapper.Map<Image>(basic.Data);
             }
             catch (Exception ex)
@@ -54,14 +53,15 @@ namespace ImgurNet
         /// <returns></returns>
         public async Task<Image> ImageUpload(ImageUpload image)
         {
+            var url = ImgurUrls.ImageUrl();
+
             try
             {
-                var results = await ImgurUrls.ImageUploadUrl()
-                    .WithImgurAuthHeader(_clientId)
+                var result = await url.WithImgurAuthHeader(_clientId)
                     .PostJsonAsync(image)
                     .ReceiveJson();
 
-                var basic = Basic.CreateFromDynamic(results);
+                var basic = Mapper.Map<Basic>(result);
                 return Mapper.Map<Image>(basic.Data);
             }
             catch (Exception ex)
