@@ -1,13 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Flurl.Http;
-using Likja.ImgurNet.Common;
-using Likja.ImgurNet.Exceptions;
-using Likja.ImgurNet.Extensions;
-using Likja.ImgurNet.Mapping;
-using Likja.ImgurNet.Models;
-
-namespace Likja.ImgurNet.Api
+﻿namespace Likja.ImgurNet.Api
 {
     public partial class ImgurApi
     {
