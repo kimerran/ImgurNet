@@ -1,7 +1,15 @@
 ImgurNet
 ========
 
-imgur wrapper in .NET
+imgur wrapper in .NET (currently work in progress)
+
+## Usage
+```
+ var imgur = new ImgurNet("CLIENT_ID", "CLIENT_SECRET");
+ 
+ var result = await imgur.ImageDetails("IMAGE_ID");
+ 
+```
 
 
 ## How to contribute
