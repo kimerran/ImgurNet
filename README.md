@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/07585ac5flf41gg0?svg=true)](https://ci.appveyor.com/project/kimerran/imgurnet)
+
 ImgurNet
 ========
 
