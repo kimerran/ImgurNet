@@ -7,7 +7,7 @@
     <ProjectGuid>{E33FFACC-A012-47F7-B331-E872B4A9B5A6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ImgurNet</RootNamespace>
+    <RootNamespace>Likja.ImgurNet</RootNamespace>
     <AssemblyName>ImgurNet</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -55,10 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\ImgurApiImage.cs" />
     <Compile Include="Common\ImgurUrls.cs" />
     <Compile Include="Exceptions\RequestFailedException.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
-    <Compile Include="ImgurNet.cs" />
+    <Compile Include="Api\ImgurApi.cs" />
     <Compile Include="Mapping\Mapper.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AccountSettings.cs" />

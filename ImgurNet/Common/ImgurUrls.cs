@@ -1,7 +1,7 @@
 ﻿using Flurl;
-using ImgurNet.Extensions;
+using Likja.ImgurNet.Extensions;
 
-namespace ImgurNet.Common
+namespace Likja.ImgurNet.Common
 {
     internal static class ImgurUrls
     {

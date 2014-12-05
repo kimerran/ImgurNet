@@ -1,7 +1,7 @@
 ﻿using Flurl;
 using Flurl.Http;
 
-namespace ImgurNet.Extensions
+namespace Likja.ImgurNet.Extensions
 {
     internal  static class StringExtensions
     {

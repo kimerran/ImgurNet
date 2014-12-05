@@ -1,4 +1,4 @@
-﻿namespace ImgurNet.Models
+﻿namespace Likja.ImgurNet.Models
 {
     public class Notification
     {

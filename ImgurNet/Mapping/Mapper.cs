@@ -1,7 +1,7 @@
 ﻿using System;
-using ImgurNet.Models;
+using Likja.ImgurNet.Models;
 
-namespace ImgurNet.Mapping
+namespace Likja.ImgurNet.Mapping
 {
     internal class Mapper
     {

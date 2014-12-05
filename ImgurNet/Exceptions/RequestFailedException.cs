@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ImgurNet.Exceptions
+namespace Likja.ImgurNet.Exceptions
 {
     class RequestFailedException : Exception
     {

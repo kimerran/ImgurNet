@@ -1,19 +1,20 @@
-﻿using ImgurNet.Models;
+﻿using Likja.ImgurNet.Api;
+using Likja.ImgurNet.Models;
 using NUnit.Framework;
 
-namespace ImgurNet.Tests
+namespace Likja.ImgurNet.Tests
 {
     [TestFixture]
     public class ImgurNetTest
     {
-        private ImgurNet imgur;
+        private ImgurApi imgur;
         static string CLIENT_ID = "566eded958e8044";
         static string CLIENT_SECRET = "6dcf529b52d4f93ba7e0439583831921117613e8";
 
         [SetUp]
         public void Setup()
         {
-            imgur = new ImgurNet(CLIENT_ID, CLIENT_SECRET);
+            imgur = new ImgurApi(CLIENT_ID, CLIENT_SECRET);
         }
 
         [Test]

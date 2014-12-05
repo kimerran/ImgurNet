@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ImgurNet.Models
+namespace Likja.ImgurNet.Models
 {
     public class Basic
     {

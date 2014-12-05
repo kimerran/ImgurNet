@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ImgurNet.Models
+namespace Likja.ImgurNet.Models
 {
     public class ImageUpload
     {

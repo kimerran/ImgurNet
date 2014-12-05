@@ -5,7 +5,7 @@ imgur wrapper in .NET (currently work in progress)
 
 ## Usage
 ```csharp
- var imgur = new ImgurNet("CLIENT_ID", "CLIENT_SECRET");
+ var imgur = new ImgurApi("CLIENT_ID", "CLIENT_SECRET");
  
  var result = await imgur.ImageDetails("IMAGE_ID");
  
@@ -18,8 +18,8 @@ public async Task<string> FileUpload(HttpPostedFileBase picture)
     var CLIENT_ID = "CLIENT_ID";
     var CLIENT_SECRET = "CLIENT_SECRET";
 
-    // create instance of ImgurNet
-    var imgur = new ImgurNet.ImgurNet(CLIENT_ID, CLIENT_SECRET);
+    // create instance of ImgurApi
+    var imgur = new ImgurApi(CLIENT_ID, CLIENT_SECRET);
   
     using (var ms = new MemoryStream())
     {

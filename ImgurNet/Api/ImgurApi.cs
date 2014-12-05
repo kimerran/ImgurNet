@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Flurl.Http;
-using ImgurNet.Common;
-using ImgurNet.Exceptions;
-using ImgurNet.Extensions;
-using ImgurNet.Mapping;
-using ImgurNet.Models;
+using Likja.ImgurNet.Common;
+using Likja.ImgurNet.Exceptions;
+using Likja.ImgurNet.Extensions;
+using Likja.ImgurNet.Mapping;
+using Likja.ImgurNet.Models;
 
-namespace ImgurNet
+namespace Likja.ImgurNet.Api
 {
-    public class ImgurNet
+    public class ImgurApi
     {
         private readonly string _clientId;
         private readonly string _clientSecret;
 
-        public ImgurNet(string clientId, string clientSecret)
+        public ImgurApi(string clientId, string clientSecret)
         {
             _clientId = clientId;
             _clientSecret = clientSecret;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ImgurNet.Models
+namespace Likja.ImgurNet.Models
 {
     public class TagVote : Vote
     {
