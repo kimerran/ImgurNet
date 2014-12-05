@@ -4,7 +4,7 @@ ImgurNet
 imgur wrapper in .NET (currently work in progress)
 
 ## Usage
-```
+```csharp
  var imgur = new ImgurNet("CLIENT_ID", "CLIENT_SECRET");
  
  var result = await imgur.ImageDetails("IMAGE_ID");
