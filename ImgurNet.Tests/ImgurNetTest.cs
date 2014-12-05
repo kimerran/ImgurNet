@@ -17,10 +17,10 @@ namespace ImgurNet.Tests
         }
 
         [Test]
-        public void ImageDetails_ShouldGetDetails()
+        public async void ImageDetails_ShouldGetDetails()
         {
             var imageId = "QPjgZ7g";
-            var result = imgur.ImageDetails(imageId);
+            var result = await imgur.ImageDetails(imageId);
 
             Assert.IsNotNull(result);
 

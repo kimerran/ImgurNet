@@ -4,6 +4,7 @@ using Flurl.Http;
 using ImgurNet.Common;
 using ImgurNet.Exceptions;
 using ImgurNet.Extensions;
+using ImgurNet.Mapping;
 using ImgurNet.Models;
 
 namespace ImgurNet
@@ -36,7 +37,7 @@ namespace ImgurNet
                     .GetJsonAsync();
 
                 var basic = Basic.CreateFromDynamic(result);
-                return basic.CreateImage();
+                return Mapper.Map<Image>(basic.Data);
             }
             catch (Exception ex)
             {
@@ -61,7 +62,7 @@ namespace ImgurNet
                     .ReceiveJson();
 
                 var basic = Basic.CreateFromDynamic(results);
-                return basic.CreateImage();
+                return Mapper.Map<Image>(basic.Data);
             }
             catch (Exception ex)
             {
